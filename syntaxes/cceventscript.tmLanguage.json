@@ -15,9 +15,13 @@
 				{
 					"name": "keyword.control.cceventscript",
 					"match": "(?i)^\\s*(if|else|endif)\\b"
-				},{
+				},
+				{
 					"name": "constant.title.cceventscript",
 					"match": "^\\s*==\\s*\\S*\\s*== *$"
+				},{
+					"name": "keyword.other.cceventscript",
+					"match": "\\S+\\s*>\\s*[A-Z_]+[\\s:](?=(.+))"
 				},
 				{
 					"name": "comment.line",
