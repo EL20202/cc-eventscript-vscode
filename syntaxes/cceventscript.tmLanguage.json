@@ -20,12 +20,15 @@
 					"name": "constant.title.cceventscript",
 					"match": "^\\s*==\\s*\\S*\\s*== *$"
 				},{
-					"name": "keyword.other.cceventscript",
-					"match": "\\S+\\s*>\\s*[A-Z_]+[\\s:](?=(.+))"
+					"name": "keyword.message.cceventscript",
+					"match": "^\\s*\\S+\\s*>\\s*[A-Z_]+[\\s:](?=(.+))"
 				},
 				{
 					"name": "comment.line",
 					"match": "^(?://|#).*"
+				},{
+					"name": "keyword.eventHeader.cceventscript",
+					"match": "(?i)^\\s*(?:message|event)\\s+\\d+\\s*$"
 				}
 			]
 		}
