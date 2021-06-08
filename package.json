@@ -1,0 +1,25 @@
+{
+    "name": "cc-eventscript",
+    "displayName": "CC-EventScript",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cceventscript",
+            "aliases": ["CC EventScript", "cceventscript"],
+            "extensions": [".cces"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cceventscript",
+            "scopeName": "",
+            "path": "./syntaxes/cceventscript.tmLanguage.json"
+        }]
+    }
+}
