@@ -11,19 +11,13 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.cceventscript",
-				"match": "\\b(if|else|endif)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.cceventscript",
-			"begin": "\"",
-			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.cceventscript",
-					"match": "\\\\."
+					"name": "keyword.control.cceventscript",
+					"match": "(?i)^\\s*(if|else|endif)\\b"
+				},{
+					"name": "comment.line",
+					"match": "^(?://|#).*"
 				}
 			]
 		}
