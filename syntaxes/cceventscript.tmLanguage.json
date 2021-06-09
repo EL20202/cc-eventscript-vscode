@@ -6,7 +6,7 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#charnames"
 		}
 	],
 	"repository": {
@@ -15,27 +15,36 @@
 				{
 					"name": "keyword.flowcontrol.cceventscript",
 					"match": "(?i)^\\s*(if|else|endif)\\b"
-				},{
+				}, {
 					"name": "keyword.set.cceventscript",
 					"match": "^(?i)^\\s*set\\b"
-				},{
+				}, {
 					"name": "constant.title.cceventscript",
 					"match": "^\\s*==\\s*\\S*\\s*== *$"
-				},{
+				}, {
 					"name": "keyword.message.cceventscript",
-					"match": "^\\s*\\S+\\s*>\\s*[A-Z_]+[\\s:](?=(.+))"
-				},{
+					"match": "(?<=^\\s*\\S+\\s*)>\\s*[A-Z_]+[\\s:](?=(.+))"
+				}, {
 					"name": "comment.line",
 					"match": "^\\s*(?://|#).*"
-				},{
+				}, {
 					"name": "keyword.eventHeader.cceventscript",
 					"match": "(?i)^\\s*(?:message|event)\\s+\\d+:?\\s*$"
-				},{
+				}, {
 					"name": "variable.cceventscript",
 					"match": "(?<=set\\s*)\\S+"
-				},{
+				}, {
 					"name": "keyword.property.cceventscript",
-					"match": "^\\s*(frequency|repeat|eventType|loopCount|condition)\\s*:"					
+					"match": "^\\s*(frequency|repeat|eventType|loopCount|condition)\\s*(?=:)"
+				}
+			]
+		},
+
+		"charnames": {
+			"patterns": [
+				{
+					"name": "constant.charname.cceventscript",
+					"match": "(?i)^\\S+(?=\\s*>\\s*[A-Z_]+)"
 				}
 			]
 		}
