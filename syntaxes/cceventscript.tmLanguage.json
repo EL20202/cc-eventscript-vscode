@@ -44,7 +44,7 @@
 			"patterns": [
 				{
 					"name": "constant.charname.cceventscript",
-					"match": "(?i)^\\S+(?=\\s*>\\s*[A-Z_]+)"
+					"match": "(?i)^\\s*\\S+(?=\\s*>\\s*[A-Z_]+)"
 				}
 			]
 		}
