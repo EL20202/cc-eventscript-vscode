@@ -31,13 +31,6 @@
 					"name": "variable.cceventscript",
 					"match": "(?<=set\\s*)\\S+"
 				}
-			],
-			"blocks": [
-				{
-					"endMarker": "(?i)^if\\s+.*$",
-					"name": "If-Block",
-					"startMarker": "(?i)^\\s+endif\\s+$"
-				}
 			]
 		}
 	},
