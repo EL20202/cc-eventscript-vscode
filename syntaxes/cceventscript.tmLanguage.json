@@ -29,7 +29,7 @@
 					"match": "(?<=^\\s*\\S+\\s*)>\\s*[A-Z_]+[\\s:](?=(.+))"
 				}, {
 					"name": "comment.line",
-					"match": "^\\s*(?://|#).*"
+					"match": "(?<!\\\\)(?:#|\/\/).*"
 				}, {
 					"name": "keyword.eventHeader.cceventscript",
 					"match": "(?i)^\\s*(?:message|event)\\s+\\d+:?\\s*$"
