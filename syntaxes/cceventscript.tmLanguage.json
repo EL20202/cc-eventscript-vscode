@@ -14,21 +14,22 @@
 			"patterns": [
 				{
 					"name": "keyword.control.cceventscript",
-					"match": "(?i)^\\s*(if|else|endif)\\b"
-				},
-				{
+					"match": "(?i)^\\s*(if|else|endif|set)\\b"
+				},{
 					"name": "constant.title.cceventscript",
 					"match": "^\\s*==\\s*\\S*\\s*== *$"
 				},{
 					"name": "keyword.message.cceventscript",
 					"match": "^\\s*\\S+\\s*>\\s*[A-Z_]+[\\s:](?=(.+))"
-				},
-				{
+				},{
 					"name": "comment.line",
-					"match": "^(?://|#).*"
+					"match": "^\\s*(?://|#).*"
 				},{
 					"name": "keyword.eventHeader.cceventscript",
-					"match": "(?i)^\\s*(?:message|event)\\s+\\d+\\s*$"
+					"match": "(?i)^\\s*(?:message|event)\\s+\\d+:?\\s*$"
+				},{
+					"name": "variable.cceventscript",
+					"match": "(?<=set\\s*)\\S+"
 				}
 			]
 		}
