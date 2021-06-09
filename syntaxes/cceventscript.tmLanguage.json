@@ -13,8 +13,11 @@
 		"keywords": {
 			"patterns": [
 				{
-					"name": "keyword.control.cceventscript",
-					"match": "(?i)^\\s*(if|else|endif|set)\\b"
+					"name": "keyword.flowcontrol.cceventscript",
+					"match": "(?i)^\\s*(if|else|endif)\\b"
+				},{
+					"name": "keyword.set.cceventscript",
+					"match": "^(?i)^\\s*set\\b"
 				},{
 					"name": "constant.title.cceventscript",
 					"match": "^\\s*==\\s*\\S*\\s*== *$"
@@ -30,6 +33,9 @@
 				},{
 					"name": "variable.cceventscript",
 					"match": "(?<=set\\s*)\\S+"
+				},{
+					"name": "keyword.property.cceventscript",
+					"match": "^\\s*(frequency|repeat|eventType|loopCount|condition)\\s*:"					
 				}
 			]
 		}
