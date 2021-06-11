@@ -20,7 +20,7 @@
 					"match": "^(?i)^\\s*set\\b"
 				}, {
 					"name": "keyword.import.cceventscript",
-					"match": "(?i)^\\s*(import)\\b"
+					"match": "(?i)^\\s*(import|include)\\b"
 				}, {
 					"name": "constant.title.cceventscript",
 					"match": "^\\s*==\\s*\\S*\\s*== *$"
