@@ -26,7 +26,7 @@
 					"match": "^\\s*==\\s*\\S*\\s*== *$"
 				}, {
 					"name": "keyword.message.cceventscript",
-					"match": "(?<=^\\s*\\S+\\s*)>\\s*[A-Z_]+[\\s:](?=(.+))"
+					"match": "(?<=^\\s*\\S+\\s*)>\\s*[A-Z\\d_]+[\\s:](?=(.+))"
 				}, {
 					"name": "comment.line",
 					"match": "(?<!\\\\)(?:#|\/\/).*"
