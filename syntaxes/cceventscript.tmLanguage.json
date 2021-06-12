@@ -25,6 +25,9 @@
 					"name": "constant.title.cceventscript",
 					"match": "^\\s*==\\s*\\S*\\s*== *$"
 				}, {
+					"name": "keyword.type",
+					"match": "^type(?:\\.\\S+)?\\s*(?=:\\s*.+)"
+				},{
 					"name": "keyword.message.cceventscript",
 					"match": "(?<=^\\s*\\S+\\s*)>\\s*[A-Z\\d_]+[\\s:](?=(.+))"
 				}, {
