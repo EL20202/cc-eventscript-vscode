@@ -38,7 +38,7 @@
 					"match": "(?i)^\\s*(?:message|event)\\s+\\d+:?\\s*$"
 				}, {
 					"name": "variable.cceventscript",
-					"match": "(?<=set\\s*)\\S+"
+					"match": "(?i)(?<=^\\s*set\\s+)\\S+"
 				}, {
 					"name": "keyword.property.cceventscript",
 					"match": "^\\s*(frequency|repeat|eventType|loopCount|condition)\\s*(?=:)"
