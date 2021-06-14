@@ -7,6 +7,9 @@
 		},
 		{
 			"include": "#charnames"
+		},
+		{
+			"include": "#formatting"
 		}
 	],
 	"repository": {
@@ -51,6 +54,42 @@
 				{
 					"name": "constant.charname.cceventscript",
 					"match": "(?i)^\\s*\\S+(?=\\s*>\\s*[A-Z_]+)"
+				}
+			]
+		},
+
+		"formatting": {
+			"patterns": [
+				{
+					"name": "variable.formatting.cceventscript",
+					"match": "\\\\(\\.|!|v\\[[\\w+-.]+\\]|i\\[[\\w+-.]+\\]|s\\[\\d\\])"
+				},
+				{
+					"name": "variable.formatting.cceventscript.color.white",
+					"match": "\\\\c\\[0\\]"
+				},
+				{
+					"name": "variable.formatting.cceventscript.color.red",
+					"match": "\\\\c\\[1\\]"
+				},
+				{
+					"name": "variable.formatting.cceventscript.color.green",
+					"match": "\\\\c\\[2\\]"
+				},
+				{
+					"name": "variable.formatting.cceventscript.color.yellow",
+					"match": "\\\\c\\[3\\]"
+				},
+				{
+					"name": "variable.formatting.cceventscript.color.gray",
+					"match": "\\\\c\\[4\\]"
+				},
+				{
+					"name": "variable.formatting.cceventscript.color.orange",
+					"match": "\\\\c\\[5\\]"
+				},{
+					"name": "variable.formatting.cceventscript.color",
+					"match": "\\\\c\\[\\d\\]"
 				}
 			]
 		}
