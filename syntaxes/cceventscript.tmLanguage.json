@@ -92,6 +92,14 @@
 					"match": "(?i)^\\s*(?:lukas|schneider)(?=\\s*>\\s*[A-Z_]+)"
 				},
 				{
+					"name": "constant.charname.luke.cceventscript",
+					"match": "(?i)^\\s*(?:luke)(?=\\s*>\\s*[A-Z_]+)"
+				},
+				{
+					"name": "constant.charname.shizuka.cceventscript",
+					"match": "(?i)^\\s*(?:shizuka)(?=\\s*>\\s*[A-Z_]+)"
+				},
+				{
 					"name": "constant.charname.cceventscript",
 					"match": "(?i)^\\s*\\S+(?=\\s*>\\s*[A-Z_]+)"
 				}
