@@ -16,11 +16,24 @@
 		"keywords": {
 			"patterns": [
 				{
-					"name": "keyword.flowcontrol.cceventscript",
-					"match": "(?i)^\\s*(if|else|endif)\\b"
+					"match": "(?i)^\\s*(if) (.+)\\b",
+					"captures": {
+						"1": {"name": "keyword.flowcontrol.if.cceventscript"},
+						"2": {"name": "value.condition.cceventscript"}
+					}
 				}, {
-					"name": "keyword.set.cceventscript",
-					"match": "^(?i)^\\s*set\\b"
+					"name": "keyword.flowcontrol.else.cceventscript",
+					"match": "(?i)^\\s*else\\b"
+				}, {
+					"name": "keyword.flowcontrol.endif.cceventscript",
+					"match": "(?i)^\\s*endif\\b"
+				}, {
+					"match": "(?i)^\\s*(set)\\s+([\\w\\.]+)\\s*(?:=|\\+|-)\\s*(true|false|\\d+)",
+					"captures": {
+						"1": {"name": "keyword.set.cceventscript"},
+						"2": {"name": "variable.cceventscript"},
+						"3": {"name": "constant"}
+					}
 				}, {
 					"name": "keyword.import.cceventscript",
 					"match": "(?i)^\\s*(import|include)\\b"
@@ -32,7 +45,10 @@
 					"match": "^type(?:\\.\\S+)?\\s*(?=:\\s*.+)"
 				},{
 					"name": "keyword.message.cceventscript",
-					"match": "(?<=^\\s*\\S+\\s*)>\\s*[A-Z\\d_]+[\\s:](?=(.+))"
+					"match": "(?<=^\\s*\\S+\\s*)>\\s*([A-Z\\d_]+)[\\s:](?=(.+))",
+					"captures": {
+						"1": {"name": "keyword.expression.cceventscript"}
+					}
 				}, {
 					"name": "comment.line",
 					"match": "(?<!\\\\)(?:#|\/\/).*"
@@ -40,17 +56,41 @@
 					"name": "keyword.eventHeader.cceventscript",
 					"match": "(?i)^\\s*(?:message|event)\\s+\\d+:?\\s*$"
 				}, {
-					"name": "variable.cceventscript",
-					"match": "(?i)(?<=^\\s*set\\s+)\\S+"
-				}, {
-					"name": "keyword.property.cceventscript",
-					"match": "^\\s*(frequency|repeat|eventType|loopCount|condition)\\s*(?=:)"
+					"match": "^\\s*(frequency|repeat|eventType|loopCount|condition)\\s*:\\s*(.+)",
+					"captures": {
+						"1": {"name": "keyword.property.cceventscript"},
+						"2": {"name": "value.cceventscript"}
+					}
 				}
 			]
 		},
 
 		"charnames": {
 			"patterns": [
+				{
+					"name": "constant.charname.lea.cceventscript",
+					"match": "(?i)^\\s*(?:lea)(?=\\s*>\\s*[A-Z_]+)"
+				},
+				{
+					"name": "constant.charname.ctron.cceventscript",
+					"match": "(?i)^\\s*(?:ctron|c'tron)(?=\\s*>\\s*[A-Z_]+)"
+				},
+				{
+					"name": "constant.charname.emilie.cceventscript",
+					"match": "(?i)^\\s*(?:emilie)(?=\\s*>\\s*[A-Z_]+)"
+				},
+				{
+					"name": "constant.charname.joern.cceventscript",
+					"match": "(?i)^\\s*(?:joern)(?=\\s*>\\s*[A-Z_]+)"
+				},
+				{
+					"name": "constant.charname.apollo.cceventscript",
+					"match": "(?i)^\\s*(?:apollo)(?=\\s*>\\s*[A-Z_]+)"
+				},
+				{
+					"name": "constant.charname.lukas.cceventscript",
+					"match": "(?i)^\\s*(?:lukas|schneider)(?=\\s*>\\s*[A-Z_]+)"
+				},
 				{
 					"name": "constant.charname.cceventscript",
 					"match": "(?i)^\\s*\\S+(?=\\s*>\\s*[A-Z_]+)"
@@ -62,30 +102,30 @@
 			"patterns": [
 				{
 					"name": "variable.formatting.cceventscript",
-					"match": "\\\\(\\.|!|v\\[[\\w+-.]+\\]|i\\[[\\w+-.]+\\]|s\\[\\d\\])"
+					"match": "\\\\(\\\\|\\.|!|v\\[[\\w+-.]+\\]|i\\[[\\w+-.]+\\]|s\\[\\d\\])"
 				},
 				{
-					"name": "variable.formatting.cceventscript.color.white",
+					"name": "variable.formatting.color.white.cceventscript",
 					"match": "\\\\c\\[0\\]"
 				},
 				{
-					"name": "variable.formatting.cceventscript.color.red",
+					"name": "variable.formatting.color.red.cceventscript",
 					"match": "\\\\c\\[1\\]"
 				},
 				{
-					"name": "variable.formatting.cceventscript.color.green",
+					"name": "variable.formatting.color.green.cceventscript",
 					"match": "\\\\c\\[2\\]"
 				},
 				{
-					"name": "variable.formatting.cceventscript.color.yellow",
+					"name": "variable.formatting.color.yellow.cceventscript",
 					"match": "\\\\c\\[3\\]"
 				},
 				{
-					"name": "variable.formatting.cceventscript.color.gray",
+					"name": "variable.formatting.color.gray.cceventscript",
 					"match": "\\\\c\\[4\\]"
 				},
 				{
-					"name": "variable.formatting.cceventscript.color.orange",
+					"name": "variable.formatting.color.orange.cceventscript",
 					"match": "\\\\c\\[5\\]"
 				},{
 					"name": "variable.formatting.cceventscript.color",
