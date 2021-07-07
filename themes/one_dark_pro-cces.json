@@ -1,0 +1,151 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "include": "one_dark_pro.json",
+  "tokenColors": [
+    {
+      "scope": "keyword.eventHeader.cceventscript",
+      "settings": {
+        "foreground": "#ff8fba"
+      }
+    },
+    {
+      "scope": "keyword.message.cceventscript",
+      "settings": {
+        "foreground": "#dbb127"
+      }
+    },
+    {
+      "scope": "constant.title.cceventscript",
+      "settings": {
+        "foreground": "#95ff95",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "variable.cceventscript",
+      "settings": {
+        "foreground": "#ff7171",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "variable.formatting.cceventscript",
+      "settings": {
+        "foreground": "#8888ff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "variable.formatting.color.white.cceventscript",
+      "settings": {
+        "foreground": "#ffffff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "variable.formatting.color.red.cceventscript",
+      "settings": {
+        "foreground": "#ff6969",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "variable.formatting.color.green.cceventscript",
+      "settings": {
+        "foreground": "#65ff89",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "variable.formatting.color.yellow.cceventscript",
+      "settings": {
+        "foreground": "#ffe430",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "variable.formatting.color.gray.cceventscript",
+      "settings": {
+        "foreground": "#808080",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "variable.formatting.color.orange.cceventscript",
+      "settings": {
+        "foreground": "#ff8932",
+        "fontStyle": "bold"
+      }
+    },
+
+    {
+      "scope": "constant.charname.cceventscript",
+      "settings": {
+        "foreground": "#eee37d"
+      }
+    },
+    {
+      "scope": "constant.charname.lea.cceventscript",
+      "settings": {
+        "foreground": "#6d9eeb"
+      }
+    },
+    {
+      "scope": "constant.charname.emilie.cceventscript",
+      "settings": {
+        "foreground": "#f6b26b"
+      }
+    },
+    {
+      "scope": "constant.charname.ctron.cceventscript",
+      "settings": {
+        "foreground": "#8e7cc3"
+      }
+    },
+    {
+      "scope": "constant.charname.luke.cceventscript",
+      "settings": {
+        "foreground": "#b6d7a8"
+      }
+    },
+    {
+      "scope": "constant.charname.joern.cceventscript",
+      "settings": {
+        "foreground": "#3d67fa"
+      }
+    },
+    {
+      "scope": "constant.charname.apollo.cceventscript",
+      "settings": {
+        "foreground": "#6aa84f"
+      }
+    },
+    {
+      "scope": "constant.charname.lukas.cceventscript",
+      "settings": {
+        "foreground": "#ffe599"
+      }
+    },
+    {
+      "scope": "constant.charname.shizuka.cceventscript",
+      "settings": {
+        "foreground": "#c27ba0"
+      }
+    },
+
+    {
+      "scope": "value",
+      "settings": {
+        "foreground": "#dddddd",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "keyword.expression",
+      "settings": {
+        "foreground": "#FFFF00",
+        "fontStyle": "italic"
+      }
+    },
+  ]
+}

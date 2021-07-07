@@ -20,6 +20,18 @@
             "language": "cceventscript",
             "scopeName": "source.cc-eventscript",
             "path": "./syntaxes/cceventscript.tmLanguage.json"
-        }]
+        }],
+        "themes": [
+            {
+                "label": "VSCode Dark (CCES)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/dark_vs_cces.json"
+            },
+            {
+                "label": "One Dark Pro (CCES)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/one_dark_pro-cces.json"
+            }
+        ]
     }
 }
