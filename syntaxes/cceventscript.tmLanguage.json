@@ -110,7 +110,7 @@
 			"patterns": [
 				{
 					"name": "variable.formatting.cceventscript",
-					"match": "\\\\(\\\\|\\.|!|v\\[[\\w+-.]+\\]|i\\[[\\w+-.]+\\]|s\\[\\d\\])"
+					"match": "\\\\(\\\\|\\.|!|v\\[[\\w+\\-.]+\\]|i\\[[\\w+\\-.]+\\]|s\\[\\d\\]|n)"
 				},
 				{
 					"name": "variable.formatting.color.white.cceventscript",
