@@ -41,7 +41,7 @@
 					"name": "keyword.flowcontrol.endif.cceventscript",
 					"match": "(?i)^\\s*endif\\b"
 				}, {
-					"match": "(?i)^\\s*(set)\\s+(\\S+)\\s*(?:[=+-]\\s*\\d+|[= ]\\s*(true|false))",
+					"match": "(?i)^\\s*(set)\\s+(\\S+)\\s*(?:[=+\\-|^]\\s*\\d+|[= |^]\\s*(true|false))",
 					"captures": {
 						"1": {"name": "keyword.set.cceventscript"},
 						"2": {"name": "variable.cceventscript"},
