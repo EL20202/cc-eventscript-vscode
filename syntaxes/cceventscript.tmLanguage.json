@@ -22,6 +22,19 @@
 						"2": {"name": "value.condition.cceventscript"}
 					}
 				}, {
+					"name": "keyword.flowcontrol.label.cceventscript",
+					"match": "(?i)^\\s*label +(\\S+)",
+					"captures": {
+						"1": {"name": "variable.labelname.cceventscript"}
+					}
+				}, {
+					"name": "keyword.flowcontrol.goto.cceventscript",
+					"match": "(?i)^\\s*goto +(?<name>\\S+)(?: +if +(.+))?",
+					"captures": {
+						"1": {"name": "variable.labelname.cceventscript"},
+						"2": {"name": "value.condition.cceventscript"}
+					}
+				}, {
 					"name": "keyword.flowcontrol.else.cceventscript",
 					"match": "(?i)^\\s*else\\b"
 				}, {

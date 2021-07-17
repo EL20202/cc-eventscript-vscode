@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "include": "dark_vs.json",
+  "include": "./src/dark_vs.json",
   "tokenColors": [
     {
       "scope": "keyword.eventHeader.cceventscript",
@@ -145,6 +145,13 @@
       "settings": {
         "foreground": "#FFFF00",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "variable.labelname.cceventscript",
+      "settings": {
+        "foreground": "#008b00",
+        "fontStyle": "bold"
       }
     },
   ]
