@@ -41,11 +41,12 @@
 					"name": "keyword.flowcontrol.endif.cceventscript",
 					"match": "(?i)^\\s*endif\\b"
 				}, {
-					"match": "(?i)^\\s*(set)\\s+(\\S+)\\s*(?:[=+\\-|^]\\s*\\d+|[= |^]\\s*(true|false))",
+					"match": "(?i)^\\s*(set)\\s+(\\S+)\\s*(?:[=+\\-|^]\\s*(\\d+)|[= |^]\\s*(true|false))",
 					"captures": {
 						"1": {"name": "keyword.set.cceventscript"},
 						"2": {"name": "variable.cceventscript"},
-						"3": {"name": "constant"}
+						"3": {"name": "constant.numeric.cceventscript"},
+						"4": {"name": "constant.cceventscript"}
 					}
 				}, {
 					"name": "keyword.import.cceventscript",
@@ -54,8 +55,12 @@
 					"name": "constant.title.cceventscript",
 					"match": "^\\s*==\\s*\\S*\\s*== *$"
 				}, {
-					"name": "keyword.type",
-					"match": "^type(?:\\.\\S+)?\\s*(?=:\\s*.+)"
+					"match": "(?i)^(type)(?:\\.(\\S+))?\\s*:\\s*(\\S+)",
+					"captures": {
+						"1": {"name": "keyword.type.cceventscript"},
+						"2": {"name": "keyword.type.cceventscript"},
+						"3": {"name": "value.condition.cceventscript"}
+					}
 				},{
 					"name": "keyword.message.cceventscript",
 					"match": "(?<=^\\s*\\S+\\s*)>\\s*([A-Z\\d_]+)[\\s:](?=(.+))",
