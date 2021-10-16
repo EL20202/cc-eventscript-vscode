@@ -10,6 +10,9 @@
 		},
 		{
 			"include": "#formatting"
+		},
+		{
+			"include": "#preprocessor"
 		}
 	],
 	"repository": {
@@ -69,7 +72,7 @@
 					}
 				}, {
 					"name": "comment.line",
-					"match": "(?<!\\\\)(?:#|\/\/).*"
+					"match": "(?<!\\\\)(?:\/\/).*"
 				}, {
 					"name": "keyword.eventHeader.cceventscript",
 					"match": "(?i)^\\s*(?:message|event)\\s+\\d+:?\\s*$"
@@ -156,6 +159,24 @@
 				},{
 					"name": "variable.formatting.cceventscript.color",
 					"match": "\\\\c\\[\\d\\]"
+				}
+			]
+		},
+
+		"preprocessor": {
+			"patterns": [
+				{
+					"name": "(?i)comment.preprocessor.define.cceventscript",
+					"match": "^#(define)\\s+(\\$?\\w+)\\s+(.+)",
+					"captures": {
+						"1": {"name": "comment.preprocessor.keyword.cceventscript"},
+						"2": {"name": "comment.preprocessor.define.var.cceventscript"},
+						"3": {"name": "comment.preprocessor.define.sub.cceventscript"}
+					}
+				},
+				{
+					"name": "comment.preprocessor.cceventscript",
+					"match": "^#(.+)"
 				}
 			]
 		}

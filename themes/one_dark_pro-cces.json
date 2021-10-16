@@ -153,6 +153,32 @@
         "foreground": "#008b00",
         "fontStyle": "bold"
       }
+    },
+    {
+      "scope": "comment.preprocessor",
+      "settings": {
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": "comment.preprocessor.keyword",
+      "settings": {
+        "foreground": "#822d9c",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "comment.preprocessor.define.var.cceventscript",
+      "settings": {
+        "foreground": "#ffff7b",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "comment.preprocessor.define.sub.cceventscript",
+      "settings": {
+        "foreground": "#eeaaaa",
+      }
     }
   ]
 }
