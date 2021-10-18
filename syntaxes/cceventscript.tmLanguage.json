@@ -71,6 +71,9 @@
 						"1": {"name": "keyword.expression.cceventscript"}
 					}
 				}, {
+					"name": "keyword.message.autocontinue.cceventscript",
+					"match": "(?i)(?<=.+>.+[: ].*)(#autocontinue)\\s*$"
+				}, {
 					"name": "comment.line",
 					"match": "(?<!\\\\)(?:\/\/).*"
 				}, {
@@ -166,12 +169,20 @@
 		"preprocessor": {
 			"patterns": [
 				{
-					"name": "(?i)comment.preprocessor.define.cceventscript",
-					"match": "^#(define)\\s+(\\$?\\w+)\\s+(.+)",
+					"name": "comment.preprocessor.define.cceventscript",
+					"match": "(?i)^(#define)\\s+(\\$?\\w+)\\s+(.+)",
 					"captures": {
 						"1": {"name": "comment.preprocessor.keyword.cceventscript"},
-						"2": {"name": "comment.preprocessor.define.var.cceventscript"},
-						"3": {"name": "comment.preprocessor.define.sub.cceventscript"}
+						"2": {"name": "comment.preprocessor.var.cceventscript"},
+						"3": {"name": "comment.preprocessor.option.cceventscript"}
+					}
+				},
+				{
+					"name": "comment.preprocessor.messageType.cceventscript",
+					"match": "(?i)^(#msgtype)\\s+(side_msg|sidemsg|message)\\s*$",
+					"captures": {
+						"1": {"name": "comment.preprocessor.keyword.cceventscript"},
+						"2": {"name": "comment.preprocessor.option.cceventscript"}
 					}
 				},
 				{

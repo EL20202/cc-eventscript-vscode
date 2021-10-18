@@ -163,19 +163,19 @@
     {
       "scope": "comment.preprocessor.keyword",
       "settings": {
-        "foreground": "#822d9c",
+        "foreground": "#beafc2",
         "fontStyle": "bold"
       }
     },
     {
-      "scope": "comment.preprocessor.define.var.cceventscript",
+      "scope": "comment.preprocessor.var.cceventscript",
       "settings": {
         "foreground": "#ffff7b",
         "fontStyle": "italic"
       }
     },
     {
-      "scope": "comment.preprocessor.define.sub.cceventscript",
+      "scope": "comment.preprocessor.option.cceventscript",
       "settings": {
         "foreground": "#eeaaaa",
       }
